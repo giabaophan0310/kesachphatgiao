@@ -13,6 +13,13 @@
         //     return ($bool == true) ? $element : NULL;
         // }
 
+        public function issetURL($url, $return, $replacement)
+        {
+            return (! @(file_get_contents($url)))
+                    ? $replacement
+                    : (is_null($return) ? $url : $return);
+        }
+
         public function checkNull()
         {
             $vals = func_get_args();

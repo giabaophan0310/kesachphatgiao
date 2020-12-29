@@ -2,6 +2,15 @@
 
 <head>
     <title>Demo</title>
+
+    <?= (! @(file_get_contents('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css')))
+            ? '<link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">'
+            : '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+                    rel="stylesheet" 
+                    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+                    crossorigin="anonymous">';
+    ?>
+
 </head>
 
 <body>
@@ -13,18 +22,8 @@
     <?php $this->renderSection('content'); ?>
 
     <br>
-    <?php
 
-$url = 'https://www.google.com/';
-$not_url = 'stp://google.com';
 
-if (@file_get_contents($url)): echo "Found '$url'!";
-else: echo "Can't find '$url'.";
-endif;
-if (@file_get_contents($not_url)): echo "Found '$not_url!";
-else: echo "Can't find '$not_url'.";
-endif;
-?>
 </body>
 
 </html>
