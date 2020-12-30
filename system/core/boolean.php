@@ -1,6 +1,6 @@
 <?php
 
-    class boolean
+    class Boolean
     {
         // public function isset($element)
         // {
