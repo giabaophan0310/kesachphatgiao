@@ -4,10 +4,35 @@
 
 @import '../style';
 
-
+@mixin Sizedefault {
+    width: 100%;
+    float: left;
+    display: block;
+}
 /**
  *
  *  CSS cục bộ:
  *
  */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    @include Sizedefault {
+        position: relative;
+        height: 100px;
+        background-color: #fff;
+        z-index: 9995;
+    }
+}
+
+.top-menu {
+    height: 60px;
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: #fff;
+}
 
