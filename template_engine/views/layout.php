@@ -1,23 +1,17 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Demo</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <?php $this->renderSection('head'); ?>
-
 </head>
-
 <body>
-
+    
     <?php $this->renderSection('sidebar'); ?>
 
     <br>
 
     <?php $this->renderSection('content'); ?>
-
-    <br>
-
-
 </body>
-
 </html>
