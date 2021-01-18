@@ -1,0 +1,218 @@
+/**
+*  CSS tổng:
+*/
+
+@import '../style';
+
+/* @mixin Sizedefault {
+    width: 100%;
+    float: left;
+    display: block;
+} */
+/**
+*
+*  CSS cục bộ:
+*
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none !important;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.box-image-logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+/*cục bộ  */
+.over-show {
+    overflow: inherit;
+}
+
+/*Left-menu*/
+
+
+.left-menu-search_form {
+    width: 100%;
+    min-height: 60px;
+    background-color: brown;
+}
+
+/*right-menu*/
+.right-menu-login {
+    width: 100%;
+    min-height: 60px;
+    background-color: chartreuse;
+}
+
+header {
+    ul {
+        display:flexbox;
+        justify-content: center;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin-left: -5px;
+        }
+    }
+    .top-head-menu {
+        width: inherit;
+        text-align: right;
+        height: 40px;
+        background-color: ivory;
+        .top-head-menu-wrapper {
+            margin-right: -15px;
+            margin-left: -15px;
+            position: relative;
+        }
+        ul.root-menu {
+            padding-top: 7px;
+            li {
+                display: inline;
+                margin: 0 18px;
+                position: relative;
+                z-index: 999;
+                list-style: none !important;
+                .top-head-sub-content {
+                    box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+                    border-radius: 3px;
+                    ul li {
+                        display: block!important;
+                        margin-right: 0!important;
+                        text-align: left;
+                        margin-bottom: 6px;
+                        padding-bottom: 4px;
+                    }
+                    .th-menu {
+                        background-color: #fff;
+                    }
+                    ul.root-menu li a{
+                        color: #000000;
+                        display: inline-block;
+                        &:hover {
+                            text-decoration: none;
+                            color: lawngreen;
+                        }
+                    }
+                }
+                &:hover .top-head-sub-content{
+                    display: block;
+                }
+            }
+            .top-head-sub-menu {
+                position: absolute;
+                left: 0;
+                width: 200px;
+                height: 50px;
+                transition: all .05s linear;
+                display: none;
+                top: 100%;
+                padding-top: 8px;
+                z-index: 1;
+                a {
+                    font-size: 12px;
+                    text-align: left;
+                }
+                ul li {
+                    padding: 0;
+                    margin: 0;
+                }
+                .th-menu {
+                    padding: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Section 1 */
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 1100px;
+    min-height: 278px;
+    background-color: lightcoral;
+    z-index: 1;
+}
+
+@media (max-width: 1750px) {
+
+}
+#slider-home-next {
+    right: 15px;
+    background-size: 15px 21px;
+    background-position: right;
+    background: transparent url(../../images/accounts/next-slider.png) no-repeat ;
+}   
+
+.swiper-button-next  {
+    transition: background-image .2s ease-out;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#slider-home-prev {
+    left: 15px;
+    background-size: 15px 21px;
+    background-position: left;
+    background: transparent url(../../images/accounts/prev-slider.png) no-repeat;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-button-next {
+    background-position: right!important;
+}
+
+.swiper-button-prev {
+    transition: background-image .2s ease-out
+}
+
+.swiper-button-prev {
+    background-position: left!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
