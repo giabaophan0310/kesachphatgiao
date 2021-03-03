@@ -9,6 +9,8 @@
     float: left;
     display: block;
 } */
+
+
 /**
 *
 *  CSS cục bộ:
@@ -23,23 +25,172 @@ body {
 ul {
     list-style: none !important;
 }
-ul, li {
+
+
+/*  load mo */
+
+@keyframes loadmo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    animation: loadmo 0.75s ease-out;
+}
+
+.bg-tlbh_1 {
+    background-color: $bg-color;
+} //c45a06
+.tlbh-over-show {
+    overflow: scroll;
+    max-height: 430px;
+    overflow-x: hidden;
+}
+
+ul,
+li {
     padding: 0;
     margin: 0;
 }
 
+
+/* Hình ảnh logo */
+
 .box-image-logo {
     display: flex;
     width: 100%;
+    height: 10rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.tlbh-navbar {
+    &>li {
+        margin-right: 1.5rem
+    }
+}
+
+
+/* form search*/
+
+.tlbh-search-btn input:focus,
+input:hover {
+    outline: none;
+}
+
+.tlbh-search-hover {
+    position: relative;
+    z-index: 999;
+}
+
+.tlbh-search-input {
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.tlbh-search-hover:hover .tlbh-search-input {
+    display: block;
+}
+
+.box-image-carousel {
+    max-width: 100%;
+    min-height: 200px;
+    background-color: black;
+    img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+span {
+    &.tlbh-list {
+        font-size: 1.2rem;
+        line-height: 1;
+        padding-right: 1.9rem;
+        padding-left: .1rem;
+    }
+}
+
+.list-group-item {
+    padding: .5rem !important;
+}
+
+.tlbh-book {
+    width: 100%;
+    min-height: 500px;
+}
+
+.box-tlbh-book-son {
+    display: block;
+    width: 100%;
     height: 100%;
-  }
+    .box-tlbh-book-son-img {
+        position: relative;
+        width: 100%;
+        z-index: 995;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+            vertical-align: middle;
+            border-style: none;
+        }
+        .tlbh-icon-book {
+            width: 100% !important;
+            height: 40px;
+            position: absolute;
+            z-index: 100;
+            top: 40%;
+            left: 23%;
+            display: none;
+        }
+        &:hover .tlbh-icon-book {
+            display: block;
+        }
+    }
+}
+
+.tlbh-img-news {
+    img {
+        display: block;
+        width: 100% !important;
+        height: 400px !important;
+        background-image: none;
+        object-fit: cover;
+    }
+}
+
+.tlbh-news-son-img {
+    width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+}
+
+
 /*cục bộ  */
+
 .over-show {
     overflow: inherit;
 }
 
-/*Left-menu*/
 
+/*Left-menu*/
 
 .left-menu-search_form {
     width: 100%;
@@ -47,7 +198,9 @@ ul, li {
     background-color: brown;
 }
 
+
 /*right-menu*/
+
 .right-menu-login {
     width: 100%;
     min-height: 60px;
@@ -56,7 +209,7 @@ ul, li {
 
 header {
     ul {
-        display:flexbox;
+        display: flexbox;
         justify-content: center;
         text-align: center;
         li {
@@ -83,7 +236,7 @@ header {
                 z-index: 999;
                 list-style: none !important;
                 .top-head-sub-content {
-                    box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+                    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
                     border-radius: 3px;
                     ul li {
                         display: block!important;
@@ -95,7 +248,7 @@ header {
                     .th-menu {
                         background-color: #fff;
                     }
-                    ul.root-menu li a{
+                    ul.root-menu li a {
                         color: #000000;
                         display: inline-block;
                         &:hover {
@@ -104,7 +257,7 @@ header {
                         }
                     }
                 }
-                &:hover .top-head-sub-content{
+                &:hover .top-head-sub-content {
                     display: block;
                 }
             }
@@ -135,8 +288,8 @@ header {
 }
 
 
-
 /* Section 1 */
+
 .swiper-container {
     margin-left: auto;
     margin-right: auto;
@@ -153,17 +306,16 @@ header {
     z-index: 1;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1750px) {}
 
-}
 #slider-home-next {
     right: 15px;
     background-size: 15px 21px;
     background-position: right;
-    background: transparent url(../../images/accounts/next-slider.png) no-repeat ;
-}   
+    background: transparent url(../../images/accounts/next-slider.png) no-repeat;
+}
 
-.swiper-button-next  {
+.swiper-button-next {
     transition: background-image .2s ease-out;
 }
 
@@ -193,6 +345,7 @@ header {
     z-index: 10;
     cursor: pointer;
 }
+
 .swiper-button-next {
     background-position: right!important;
 }
@@ -206,13 +359,84 @@ header {
 }
 
 
+/*Section 2*/
+
+.tlbh-bg-s2 {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: $box-shadow-1;
+}
 
 
+/* Section book-audio */
+
+.tlbh-book-audio {
+    width: 100%;
+    min-height: 380px;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 
+/*Sách nói */
 
+.tlbh-book-talk {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 8px;
+}
 
+.tlbh-bt-head {
+    width: 100%;
+    min-height: 100px;
+}
 
+.tlbh-read-tb {
+    padding: 5px;
+}
 
-
-
+.tlbh-bt-main {
+    width: 100%;
+    min-height: 200px;
+    .tlbh-img-rel {
+        position: relative;
+        z-index: 1000;
+    }
+    .tlbh-img-abs {
+        position: absolute;
+        z-index: 1001;
+        width: 140px;
+        height: 205px;
+        top: 40%;
+        left: 40px;
+    }
+    .tlbh-book-img {
+        width: 200px;
+        min-height: 200px;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 50%;
+            vertical-align: center;
+            object-fit: cover;
+        }
+    }
+    .tlbh-audio-box {
+        position: absolute;
+        z-index: 1001;
+        width: 584px;
+        min-height: 100px;
+        padding-right: 2px;
+        top: 74%;
+        right: 15px;
+        audio {
+            margin-left: 2px;
+            width: 100%!important;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

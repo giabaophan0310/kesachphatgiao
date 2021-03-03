@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../js/jquery_3.5.1.js"></script>
+    <link rel="stylesheet" href="../../../css/client/index.css">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../icons/css/fontello.css">
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <title>Kệ sách Phật Giáo</title>
+
+</head>
+
+<body class="main-bg-i dm-main">
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div class="bg-dark box-image-logo d-flex justify-content-center">
+                        <a href=""><img src="../../../images/accounts/logo_demo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 p-0 ">
+                    <nav class="navbar navbar-expand-lg navbar-light main-bg-i dm-main">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto tlbh-navbar">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Giới Thiệu
+                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Mục đích</a>
+                                        <a class="dropdown-item" href="#">Người sáng lập</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Cty Hoa Lan Thanh Quang</a>
+                                        <a class="dropdown-item" href="#">Cty Sâm Ngọc Linh</a>
+                                        <a class="dropdown-item" href="#">Viện NC&UD Buddha YoGa</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Hoạt động
+                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                        <a class="dropdown-item" href="#">Thông báo</a>
+                                        <a class="dropdown-item" href="#">Tin Tức</a>
+                                        <a class="dropdown-item" href="#">Hình Ảnh</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Triết lý
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <a class="dropdown-item" href="#">Luận giảng</a>
+                                        <a class="dropdown-item" href="#">Khai Thị luận</a>
+                                        <a class="dropdown-item" href="#">Ứng Dụng</a>
+                                        <a class="dropdown-item" href="#">Sách nói</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Thư viện bài giảng
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                        <a class="dropdown-item" href="#">video</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Mp3</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Câu chuyện
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                        <a class="dropdown-item" href="#">Thực hành thực chứng <br> kết quả nhập thế</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Bài viết</a>
+                                        <a class="dropdown-item" href="#">Cảm nhận</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <form class="form-inline my-2 my-lg-0 tlbh-search">
+                                <!-- <input class="form-control mr-sm-2 tlbh-search-inp" type="search" placeholder="Search" aria-label="Search"> -->
+                                <button class="btn btn-outline-dark my-2 my-sm-0 tlbh-search-btn mr-2 " type="submit"><i class="icon-search-8"></i></button>
+                                <button class="btn btn-outline-secondary my-2 my-sm-0 tlbh-search-btn mr-2 " id="darkmode" type="button"><i class="icon-sun-2"></i></button>
+                                <button class="btn btn-outline-danger my-2 my-sm-0 tlbh-login-btn " id="login" type="login"><i class="icon-user-o"></i></button>
+                            </form>
+                            <!-- <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form> -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div style="display: block;">
+        <main>
+            <section>
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-2 d-flex justify-content-start">
+                                    <span style="padding-left: 5px;padding-top: 10px;">SÁCH NÓI</span>
+                                </div>
+                                <div class="col-sm-10 d-flex justify-content-end">
+                                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-link active pr-0 mr-5" href="#">Tất cả <span class="sr-only">(current)</span></a>
+                                                <a class="nav-link pr-0 mr-5" href="#">Đọc</a>
+                                                <a class="nav-link pr-0 mr-5" href="#">Hạt Giống Tâm Hồn</a>
+                                                <a class="nav-link pr-0" href="#" tabindex="-1" aria-disabled="true">Phật Pháp Ứng Dụng</a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mt-5">
+                                <div class="col-sm-9">
+                                    <div class="tlbh-book-talk">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="tlbh-bt-head">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">Nếu biết trăm năm là hữu hạn</div>
+                                                                <div class="panel-body">
+                                                                    <div class="tlbh-tb-author">
+                                                                        <span>Tác giả: <strong>Thích Huệ Đăng</strong></span>
+                                                                    </div>
+                                                                    <div class="tlbh-tb-date">
+                                                                        <span>Ngày cập nhật: <strong>27/1/2021</strong></span>
+                                                                    </div>
+                                                                    <div class="tlbh-tb-views">
+                                                                        <i class=" icon-headphones-3"></i><span><strong>10000</strong> Lượt nghe</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 d-flex justify-content-end align-items-center">
+                                                            <div class="tlbh-read-tb">
+                                                                <button type="submit">ĐỌC SÁCH</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tlbh-bt-main mt-3">
+                                                    <img src="../../../images/accounts/bg_1.jpg" class="tlbh-img-rel img-fluid" alt="Responsive image">
+                                                    <div class="tlbh-img-abs tlbh-book-img">
+                                                        <img src="../../../images/accounts/suong_demo.jpg" class="img-fluid" alt="suong_demo.jpg">
+                                                    </div>
+                                                    <div class="tlbh-audio-box">
+                                                        <audio controls>
+                                                            
+                                                            <source src="../../../images/accounts/01_Muoi-Nguyen-Cua-Bo-Tat-Pho-Hien.mp3" type="audio/mpeg">
+                                                          
+                                                          </audio>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid mt-4 bg-danger ">
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <div class="customer-quote-box ">
+                                <div class="container d-flex justify-content-center ">
+                                    <div id="carouselExampleControls2 " class="carousel slide " data-ride="carousel ">
+                                        <div class="carousel-inner w-100 ">
+                                            <div class="carousel-item active ">
+                                                <span>Các câu nói châm ngôn</span>
+                                            </div>
+                                            <div class="carousel-item ">
+                                                <span>Các câu nói châm ngôn</span>
+                                            </div>
+                                            <div class="carousel-item ">
+                                                <span>Các câu nói châm ngôn</span>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev " href="#carouselExampleControls2 " role="button " data-slide="prev ">
+                                            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                                            <span class="sr-only ">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next " href="#carouselExampleControls2 " role="button " data-slide="next ">
+                                            <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                                            <span class="sr-only ">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-sm-12 bg-dark ">
+
+                        <div class="footer-box ">
+
+                            <div class="row ">
+                                <div class="col-sm-12 d-flex justify-content-center py-5 ">
+                                    Triết lý Buddha - Trách nhiệm bản quyền do
+                                    <br>
+                                </div>
+                                <hr>
+                                <div class="col d-flex justify-content-center ">&copy; 2021 trietlybudhha</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        </div>
+
+        <!-- 
+        SCRIPT
+     -->
+        <script src="../../../js/client/index.js "></script>
+
+
+</body>
+
+</html>

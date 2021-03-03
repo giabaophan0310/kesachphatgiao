@@ -8,8 +8,8 @@
 /**
  *      Default elements, classes
  */
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,95 +17,138 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul
-{
+ul {
     display: flex;
 }
 
-li
-{
+li {
     list-style: none;
 }
+
 a {
-    color: #000;
-    background-color: lightcoral;
-    text-decoration: none !important;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: inherit;
+    }
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+
 /**
  *      Default texts
  */
-.bold-txt
-{
+
+.bold-txt {
     font-weight: bold !important;
 }
-.upc-txt
-{
+
+.upc-txt {
     text-transform: uppercase !important;
 }
+
+
 /**
  *      Default buttons
  */
-.btn-hv
-{
+
+.btn-hv {
     border: none;
     cursor: pointer;
 }
-.btn-hv:hover
-{
+
+.btn-hv:hover {
     filter: brightness(125%);
 }
 
 
+/*
+    Biến Box shadow
+*/
+
+$box-shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+/*
+    Biến Color default
+*/
+
+$bg-color: #d9c4b3;
+// Chiếm phần lớn website: 50 ~ 70%
+$main-color: #535F2D;
+// Khoảng: ~30%
+$bside-color: #7F5D53;
+// Khoảng: ~5% ([highlight-color] -> Thường dùng cho những điểm nhấn :hover, link,...)
+$hl-color: #7F5D53;
+
+/*
+    Biến Color darkmode
+*/
+
+$bg-color-dm: #000;
+$main-color-dm: #535F2D;
+$bside-color-dm: #7F5D53;
+$hl-color-dm: #7F5D53;
+
 /**
  *      Box's background color
  */
-.main-bg
-{
-    background-color: #51C5DD;
+
+.bg-bg {
+    background-color: $bg-color;
 }
-.bside-bg
-{
-    background-color: #0A4F70;
+
+.main-bg {
+    background-color: $main-color;
 }
-.hl-bg
-{
-    background-color: #F04C63;
+
+.bside-bg {
+    background-color: $bside-color;
 }
-.lightgray-bg
-{
+
+.hl-bg {
+    background-color: $hl-color;
+}
+
+.lightgray-bg {
     background-color: #f8f6f7;
 }
-.gray-bg
-{
+
+.gray-bg {
     background-color: #c6c4c4;
 }
+
 
 /**
  *      Box's background color !IMPORTANT
  */
-.main-bg-i
-{
-    background-color: #51C5DD !important;
+
+.bg-bg-i {
+    background-color: $bg-color !important;
 }
-.bside-bg-i
-{
-    background-color: #0A4F70 !important;
+
+.main-bg-i {
+    background-color: $main-color !important;
 }
-.hl-bg-i
-{
-    background-color: #F04C63 !important;
+
+.bside-bg-i {
+    background-color: $bside-color !important;
 }
-.lightgray-bg-i
-{
+
+.hl-bg-i {
+    background-color: $hl-color !important;
+}
+
+.lightgray-bg-i {
     background-color: #f8f6f7 !important;
 }
-.gray-bg-i
-{
+
+.gray-bg-i {
     background-color: #c6c4c4 !important;
 }
 
@@ -113,28 +156,28 @@ input::-webkit-inner-spin-button {
 /**
  *      Box:HOVER's background color
  */
-.main-bg-hv:hover
-{
-    background-color: #51C5DD !important;
+
+.main-bg-hv:hover {
+    background-color: $main-color !important;
     transition: all 0.15s;
 }
-.bside-bg-hv:hover
-{
-    background-color: #0A4F70 !important;
+
+.bside-bg-hv:hover {
+    background-color: $bside-color !important;
     transition: all 0.15s;
 }
-.hl-bg-hv:hover
-{
-    background-color: #F04C63 !important;
+
+.hl-bg-hv:hover {
+    background-color: $hl-color !important;
     transition: all 0.15s;
 }
-.lightgray-bg-hv:hover
-{
+
+.lightgray-bg-hv:hover {
     background-color: #f8f6f7 !important;
     transition: all 0.15s;
 }
-.gray-bg-hv:hover
-{
+
+.gray-bg-hv:hover {
     background-color: #c6c4c4 !important;
     transition: all 0.15s;
 }
@@ -143,48 +186,49 @@ input::-webkit-inner-spin-button {
 /**
  *      Text color
  */
-.main-txt
-{
-    color: #51C5DD;
+
+.main-txt {
+    color: $main-color;
 }
-.bside-txt
-{
-    color: #0A4F70;
+
+.bside-txt {
+    color: $bside-color;
 }
-.hl-txt
-{
-    color: #F04C63;
+
+.hl-txt {
+    color: $hl-color;
 }
-.lightgray-txt
-{
+
+.lightgray-txt {
     color: #f8f6f7;
 }
-.gray-txt
-{
+
+.gray-txt {
     color: #c6c4c4;
 }
+
 
 /**
  *      Text color !IMPORTANT
  */
-.main-txt-i
-{
-    color: #51C5DD !important;
+
+.main-txt-i {
+    color: $main-color !important;
 }
-.bside-txt-i
-{
-    color: #0A4F70 !important;
+
+.bside-txt-i {
+    color: $bside-color !important;
 }
-.hl-txt-i
-{
-    color: #F04C63 !important;
+
+.hl-txt-i {
+    color: $hl-color !important;
 }
-.lightgray-txt-i
-{
+
+.lightgray-txt-i {
     color: #f8f6f7 !important;
 }
-.gray-txt-i
-{
+
+.gray-txt-i {
     color: #c6c4c4 !important;
 }
 
@@ -192,28 +236,28 @@ input::-webkit-inner-spin-button {
 /**
  *      Text:HOVER color
  */
-.main-hv:hover
-{
-    color: #51C5DD;
+
+.main-hv:hover {
+    color: $main-color;
     transition: all 0.15s;
 }
-.bside-hv:hover
-{
-    color: #0A4F70;
+
+.bside-hv:hover {
+    color: $bside-color;
     transition: all 0.15s;
 }
-.hl-hv:hover
-{
-    color: #F04C63;
+
+.hl-hv:hover {
+    color: $hl-color;
     transition: all 0.15s;
 }
-.lightgray-hv:hover
-{
+
+.lightgray-hv:hover {
     color: #f8f6f7;
     transition: all 0.15s;
 }
-.gray-hv:hover
-{
+
+.gray-hv:hover {
     color: #c6c4c4;
     transition: all 0.15s;
 }
